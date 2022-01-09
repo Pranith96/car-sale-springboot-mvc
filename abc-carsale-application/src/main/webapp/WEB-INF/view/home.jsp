@@ -176,7 +176,7 @@
 			</form:form>
 		</div>
 	</nav>
-	<h3>${response}</h3>
+	<h3>${greeting}</h3>
 	<div class="box-main">
 		<div class="firstHalf">
 			<h1 class="heading-mission">Mission:</h1>

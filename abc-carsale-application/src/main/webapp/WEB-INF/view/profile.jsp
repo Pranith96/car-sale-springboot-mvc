@@ -18,13 +18,6 @@
 		</div>
 	</form>
 
-	<%-- <form align='center'
-		action='http://localhost:8081/user/update/page'>
-		<div align='center'>
-			<input type='submit' value='Update Profile' />
-		</div>
-	</form> --%>
-
 	<form align='center'
 		action='http://localhost:8081/user/logout'>
 		<div align='center'>

@@ -11,13 +11,6 @@
 		</div>
 	</form>
 
-	<%-- <form align='center'
-		action='http://localhost:8080/communityportal/user/get/profile/${userId}'>
-		<div align='center'>
-			<input type='submit' value='Profile' />
-		</div>
-	</form> --%>
-
 	<form align='center'
 		action='http://localhost:8081/user/logout'>
 		<div align='center'>

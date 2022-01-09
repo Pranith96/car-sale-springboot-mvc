@@ -6,7 +6,7 @@
 <html>
 <head>
 <style>
-textarea{
+textarea {
 	width: 100%;
 	padding: 20px;
 	border: 1px solid #ccc;
@@ -18,7 +18,22 @@ textarea{
 <title>Contact Us</title>
 </head>
 <body bgcolor="#87ceff">
+	<script>
+		function validateform() {
+			var fullName = document.myform.fullName.value;
+			var emailId = document.myform.emailId.value;
 
+			if (fullName == "") {
+				alert("fullName is Mandatory");
+				return false;
+			}
+
+			if (emailId == "") {
+				alert("emailId is Mandatory");
+				return false;
+			}
+		}
+	</script>
 	<%
 	response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate"); //HTTP1.1 browser
 	response.setHeader("Pragma", "no-cache"); //HTTP1.0 browser
@@ -50,7 +65,8 @@ textarea{
 
 			<tr>
 				<td><label>Description:</label></td>
-				<td><textarea id="description" name="description" placeholder="Write something.." style="height:170px"></textarea></td>
+				<td><textarea id="description" name="description"
+						placeholder="Write something.." style="height: 170px"></textarea></td>
 			</tr>
 
 			<tr>

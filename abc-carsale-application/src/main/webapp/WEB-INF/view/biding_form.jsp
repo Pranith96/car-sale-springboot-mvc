@@ -9,55 +9,40 @@
 <title>Biding details</title>
 </head>
 <body bgcolor="#87ceff">
-	<!-- <script>
+	<script>
 		function validateform() {
-			var name = document.myform.name.value;
-			var phone = document.myform.phone.value;
-			var localities = document.myform.localities.value;
-			var email = document.myform.email.value;
+			var carBidingPrice = document.myform.carBidingPrice.value;
 			var userName = document.myform.userName.value;
-			var password = document.myform.password.value;
+			var date = document.myform.date.value;
 
-			if (name == "") {
-				alert("Name is Mandatory");
+			if (carBidingPrice == "") {
+				alert("carBidingPrice is Mandatory");
 				return false;
 			}
 
-			if (phone == "") {
-				alert("Mobile Number is Mandatory");
+			if (userName == "") {
+				alert("userName is Mandatory");
 				return false;
 			}
 
-			if (localities == "") {
-				alert("localities is Mandatory");
-				return false;
-			}
-
-			if (email == "") {
-				alert("Email is Mandatory");
-				return false;
-			}
-
-			if (password == "") {
-				alert("password is Mandatory");
+			if (date == "") {
+				alert("date is Mandatory");
 				return false;
 			}
 		}
-	</script> -->
+	</script>
 
 	<%
 	response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate"); //HTTP1.1 browser
 	response.setHeader("Pragma", "no-cache"); //HTTP1.0 browser
 	response.setHeader("Expires", "0"); //proxies
 	%>
-	<form align='left'
-		action='http://localhost:8081/home/page'>
+	<form align='left' action='http://localhost:8081/home/page'>
 		<div align='left'>
 			<input type='submit' value='Home' />
 		</div>
 	</form>
-	<form align='left'
-		action='http://localhost:8081/user/logout'>
+	<form align='left' action='http://localhost:8081/user/logout'>
 		<div align='left'>
 			<input type='submit' value='Logout' />
 		</div>
@@ -91,7 +76,8 @@
 
 			<tr>
 				<td><label>Book an Appointment Date:</label></td>
-				<td><form:input path="date" placeholder = "Enter YYYY/MM/DD format"></form:input></td>
+				<td><form:input path="date"
+						placeholder="Enter YYYY/MM/DD format"></form:input></td>
 			</tr>
 			<tr>
 				<td><input type="submit" style="float: right"></input></td>

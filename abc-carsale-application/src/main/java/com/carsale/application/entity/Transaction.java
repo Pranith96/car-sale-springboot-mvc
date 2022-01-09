@@ -1,68 +1,43 @@
 package com.carsale.application.entity;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.data.annotation.CreatedDate;
+
 @Entity
-public class BidingDetails {
+public class Transaction {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer bidingId;
+	private Integer transactionId;
 	private String carNumber;
 	private String carModel;
 	private double carBidingPrice;
 	private String userName;
-	private String date;
-	private String status;
+	@CreatedDate
+	private LocalDateTime localDateTime;
 
-	public BidingDetails() {
-	}
-
-	public BidingDetails(Integer bidingId, String carNumber, String carModel, double carBidingPrice, String userName,
-			String date, String status) {
-		super();
-		this.bidingId = bidingId;
+	public Transaction(Integer transactionId, String carNumber, String carModel, double carBidingPrice, String userName,
+			LocalDateTime localDateTime) {
+		this.transactionId = transactionId;
 		this.carNumber = carNumber;
 		this.carModel = carModel;
 		this.carBidingPrice = carBidingPrice;
 		this.userName = userName;
-		this.date = date;
-		this.status = status;
+		this.localDateTime = localDateTime;
 	}
 
-	public String getCarModel() {
-		return carModel;
+	public Integer getTransactionId() {
+		return transactionId;
 	}
 
-	public void setCarModel(String carModel) {
-		this.carModel = carModel;
-	}
-
-	public String getDate() {
-		return date;
-	}
-
-	public void setDate(String date) {
-		this.date = date;
-	}
-
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
-	public Integer getBidingId() {
-		return bidingId;
-	}
-
-	public void setBidingId(Integer bidingId) {
-		this.bidingId = bidingId;
+	public void setTransactionId(Integer transactionId) {
+		this.transactionId = transactionId;
 	}
 
 	public String getCarNumber() {
@@ -71,6 +46,14 @@ public class BidingDetails {
 
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
+	}
+
+	public String getCarModel() {
+		return carModel;
+	}
+
+	public void setCarModel(String carModel) {
+		this.carModel = carModel;
 	}
 
 	public double getCarBidingPrice() {
@@ -87,6 +70,17 @@ public class BidingDetails {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public LocalDateTime getLocalDateTime() {
+		return localDateTime;
+	}
+
+	public void setLocalDateTime(LocalDateTime localDateTime) {
+		this.localDateTime = localDateTime;
+	}
+
+	public Transaction() {
 	}
 
 }

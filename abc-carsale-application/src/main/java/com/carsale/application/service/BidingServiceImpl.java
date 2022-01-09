@@ -11,17 +11,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.carsale.application.entity.BidingDetails;
+import com.carsale.application.entity.Transaction;
 import com.carsale.application.exceptions.BusinessSystemException;
 import com.carsale.application.repository.BidingRepository;
+import com.carsale.application.repository.TransactionRepository;
 
 @Service
 @Transactional
 public class BidingServiceImpl implements BidingService {
 
-    private static final Logger logger = LogManager.getLogger(BidingServiceImpl.class);
+	private static final Logger logger = LogManager.getLogger(BidingServiceImpl.class);
 
 	@Autowired
 	BidingRepository bidingRepository;
+
+	@Autowired
+	TransactionRepository trasanctionRepository;
 
 	@Override
 	public String saveBidingDetails(BidingDetails bidingDetails) {
@@ -67,4 +72,16 @@ public class BidingServiceImpl implements BidingService {
 		return response;
 	}
 
+	@Override
+	public String saveTransactionDetails(Transaction transaction) {
+		Transaction response = trasanctionRepository.save(transaction);
+		String deactiveResponse = updateBidingStatus(transaction.getCarNumber());
+		logger.info("removed all unseccussfull bidings:", deactiveResponse);
+		if (response == null) {
+			return "Transact failed to save";
+		}
+		return "Transact successfully saved. Your transaction Details are Transaction id: "
+				+ response.getTransactionId() + " and car number: " + response.getCarNumber() + " and car Model: "
+				+ response.getCarModel() + " and sold price: " + response.getCarBidingPrice();
+	}
 }

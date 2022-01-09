@@ -9,12 +9,11 @@
 <title>ADD User details</title>
 </head>
 <body bgcolor="#87ceff">
-	<!-- <script>
+	<script>
 		function validateform() {
 			var name = document.myform.name.value;
-			var phone = document.myform.phone.value;
-			var localities = document.myform.localities.value;
-			var email = document.myform.email.value;
+			var mobileNumber = document.myform.mobileNumber.value;
+			var emailId = document.myform.emailId.value;
 			var userName = document.myform.userName.value;
 			var password = document.myform.password.value;
 
@@ -23,13 +22,8 @@
 				return false;
 			}
 
-			if (phone == "") {
+			if (mobileNumber == "") {
 				alert("Mobile Number is Mandatory");
-				return false;
-			}
-
-			if (localities == "") {
-				alert("localities is Mandatory");
 				return false;
 			}
 
@@ -43,7 +37,7 @@
 				return false;
 			}
 		}
-	</script> -->
+	</script>
 
 	<%
 	response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate"); //HTTP1.1 browser

@@ -2,58 +2,20 @@
 <%@ page language="java" contentType="text/html"%>
 
 <html>
-<marquee width="100%" behavior="scroll" bgcolor="#00ffff">
-	Car Sale Website </marquee>
+<marquee width="100%" behavior="scroll" bgcolor="#00ffff"> Car
+	Sale Website </marquee>
 <head>
 
 <title>Update Profile</title>
 </head>
 <body bgcolor="#87ceff">
-	<!-- <script>
-		function validateform() {
-			var firstName = document.myform.firstName.value;
-			var lastName = document.myform.lastName.value;
-			var mobileNumber = document.myform.mobileNumber.value;
-			var email = document.myform.emailId.value;
-
-			if (firstName == "") {
-				alert("First Name is Mandatory");
-				return false;
-			}
-
-			if (lastName == "") {
-				alert("Last Name is Mandatory");
-				return false;
-			}
-
-			if (mobileNumber == "") {
-				alert("Mobile Number is Mandatory");
-				return false;
-			}
-
-			if (email == "") {
-				alert("Email is Mandatory");
-				return false;
-			}
-		}
-	</script> -->
-
-	<form align='center'
-		action='http://localhost:8081/home/page'>
+	<form align='center' action='http://localhost:8081/home/page'>
 		<div align='center'>
 			<input type='submit' value='Home' />
 		</div>
 	</form>
 
-	<%-- <form align='center'
-		action='http://localhost:8080/communityportal/user/get/profile/${userId}'>
-		<div align='center'>
-			<input type='submit' value='Profile' />
-		</div>
-	</form> --%>
-
-	<form align='center'
-		action='http://localhost:8081/user/logout'>
+	<form align='center' action='http://localhost:8081/user/logout'>
 		<div align='center'>
 			<input type='submit' value='Logout' />
 		</div>
@@ -84,7 +46,8 @@
 
 			<tr>
 				<td><label>User Name:</label></td>
-				<td><form:input path="userName" placeholder = "Mandetory and cant update"></form:input></td>
+				<td><form:input path="userName"
+						placeholder="Mandetory and cant update"></form:input></td>
 			</tr>
 
 			<tr>

@@ -10,13 +10,6 @@
 		</div>
 	</form>
 
-	<%-- <form align='center'
-		action='http://localhost:8080/communityportal/user/get/profile/${userId}'>
-		<div align='center'>
-			<input type='submit' value='Profile' />
-		</div>
-	</form> --%>
-
 	<form align='center' action='http://localhost:8081/user/logout'>
 		<div align='center'>
 			<input type='submit' value='Logout' />
@@ -34,6 +27,8 @@
 			<th>userName</th>
 			<th>Test Drive date</th>
 			<th>Biding Status</th>
+			<th>Accept Biding</th>
+			
 		</tr>
 
 		<c:forEach var="x" items="${response}">
@@ -47,6 +42,8 @@
 				<td><a
 					href="<c:url value='http://localhost:8081/car/biding/deactive/${x.getCarNumber()}'/>">Currently
 						status ACTIVE. Click here to Deactivate</a></td>
+				<td><a
+					href="<c:url value='http://localhost:8081/car/biding/transaction/${x.getCarNumber()}/${x.getCarModel()}/${x.getCarBidingPrice()}/${x.getUserName()}'/>">Click to accept the Biding</a></td>
 			</tr>
 		</c:forEach>
 	</table>

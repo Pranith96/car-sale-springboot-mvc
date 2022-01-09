@@ -9,14 +9,7 @@
 			<input type='submit' value='Home' />
 		</div>
 	</form>
-
-	<%-- <form align='center'
-		action='http://localhost:8080/communityportal/user/get/profile/${userId}'>
-		<div align='center'>
-			<input type='submit' value='Profile' />
-		</div>
-	</form> --%>
-
+	
 	<form align='center' action='http://localhost:8081/user/logout'>
 		<div align='center'>
 			<input type='submit' value='Logout' />
@@ -43,7 +36,9 @@
 				<td><c:out value="${x.getCarModel()}" /></td>
 				<td><c:out value="${x.getPrice()}" /></td>
 				<td><c:out value="${x.getRegistrationYear()}" /></td>
-				<td><img src='/abc-carsale-application/src/main/webapp/imagedata/"+<c:out value="${x.getfile()}" />"+"' height="200px" width="200px"/></td>
+				<td><img
+					src='/abc-carsale-application/src/main/webapp/imagedata/"+<c:out value="${x.getfile()}" />"+"'
+					height="200px" width="200px" /></td>
 				<td><a
 					href="<c:url value='http://localhost:8081/car/status/update/${x.getCarNumber()}'/>">Currently
 						status ACTIVE. Click here to Deactivate</a></td>

@@ -1,0 +1,57 @@
+2022-01-09 09:55:55,906 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AbcCarSaleApplication using Java 1.8.0_271 on HYDLPT-2GMX5 with PID 20392 (C:\Users\ramannpr\support_works\car sale application\abc-carsale-application\target\classes started by ramannpr in C:\Users\ramannpr\support_works\car sale application\abc-carsale-application)
+2022-01-09 09:55:55,921 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.8, Spring v5.3.14
+2022-01-09 09:55:55,923 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-09 09:55:56,072 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-09 09:55:56,073 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-09 09:55:57,443 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-09 09:55:57,697 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 227 ms. Found 5 JPA repository interfaces.
+2022-01-09 09:55:58,462 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@924d0dd' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-09 09:55:58,476 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-09 09:55:59,946 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2022-01-09 09:55:59,967 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-09 09:55:59,969 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-09 09:55:59,970 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-09 09:55:59,977 WARN o.a.j.l.DirectJDKLog [restartedMain] This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-09 09:55:59,978 INFO o.a.j.l.DirectJDKLog [restartedMain] An older version [1.2.27] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-09 09:55:59,979 INFO o.a.j.l.DirectJDKLog [restartedMain] Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2022-01-09 09:55:59,980 INFO o.a.j.l.DirectJDKLog [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-09 09:55:59,980 INFO o.a.j.l.DirectJDKLog [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-09 09:55:59,986 INFO o.a.j.l.DirectJDKLog [restartedMain] OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-09 09:56:00,553 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-01-09 09:56:00,565 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-09 09:56:00,565 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4491 ms
+2022-01-09 09:56:00,935 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-09 09:56:01,033 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.33
+2022-01-09 09:56:01,269 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-09 09:56:01,496 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-01-09 09:56:02,991 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-01-09 09:56:03,027 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-09 09:56:05,047 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKj6m8fwv7oqv74fcehir1a9ffy foreign key (role_id) references roles (role_id)
+2022-01-09 09:56:05,105 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKgd3iendaoyh04b95ykqise6qh foreign key (user_id) references user (user_id)
+2022-01-09 09:56:05,150 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-09 09:56:05,167 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-09 09:56:05,303 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-09 09:56:07,147 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ece954a, org.springframework.security.web.context.SecurityContextPersistenceFilter@179b7d91, org.springframework.security.web.header.HeaderWriterFilter@14b4947e, org.springframework.security.web.authentication.logout.LogoutFilter@2633f967, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65165acf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@500ac2c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dc18298, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@316f1d6c, org.springframework.security.web.session.SessionManagementFilter@6d198691, org.springframework.security.web.access.ExceptionTranslationFilter@17a40efe, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ea9a838]
+2022-01-09 09:56:08,047 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-09 09:56:08,086 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-09 09:56:08,156 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2022-01-09 09:56:08,182 INFO o.s.b.StartupInfoLogger [restartedMain] Started AbcCarSaleApplication in 13.059 seconds (JVM running for 14.854)
+2022-01-09 09:56:11,736 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-09 09:56:11,737 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-09 09:56:11,739 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2022-01-09 09:56:11,868 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-1] In car operations controller
+2022-01-09 09:56:11,909 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-1] In service class before fetching all car details
+2022-01-09 09:56:11,966 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-09 09:56:12,024 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-1] In service class after fetching all car details
+2022-01-09 09:56:27,300 INFO c.c.a.c.LoginController [http-nio-8081-exec-7] Before login
+2022-01-09 09:56:27,578 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-7] in  userdetails service
+2022-01-09 09:56:27,584 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-7] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-09 09:56:27,623 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-7] select role0_.user_id as user_id1_5_0_, role0_.role_id as role_id2_5_0_, role1_.role_id as role_id1_3_1_, role1_.user_role as user_rol2_3_1_ from users_roles role0_ inner join roles role1_ on role0_.role_id=role1_.role_id where role0_.user_id=?
+2022-01-09 09:56:27,930 INFO c.c.a.c.LoginController [http-nio-8081-exec-7] After login
+2022-01-09 09:56:32,322 INFO c.c.a.c.HomePageController [http-nio-8081-exec-8] In Home page controller
+2022-01-09 09:56:34,448 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-9] In car operations controller
+2022-01-09 09:56:34,454 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-9] In service class before fetching all car details
+2022-01-09 09:56:34,456 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-09 09:56:34,460 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-9] In service class after fetching all car details
+2022-01-09 10:22:03,418 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m3s208ms194µs800ns).
+2022-01-09 11:11:29,181 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49m25s763ms278µs700ns).

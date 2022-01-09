@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.carsale.application.entity.BidingDetails;
+import com.carsale.application.entity.Transaction;
 import com.carsale.application.service.BidingService;
 
 @RestController
@@ -79,5 +80,22 @@ public class BidingController {
 		model.addObject("response", response);
 		model.setViewName("viewbidingposts");
 		return model;
+	}
+
+	@GetMapping("/biding/transaction/{carNumber}/{carModel}/{bidingprice}/{userName}")
+	public ModelAndView saveBidingDetails(@PathVariable("carNumber") String carNumber,
+			@PathVariable("carModel") String carModel, @PathVariable("bidingprice") double bidingprice,
+			@PathVariable("userName") String userName) {
+		Transaction transaction = new Transaction();
+		logger.info("In biding controller");
+		transaction.setCarNumber(carNumber);
+		transaction.setCarModel(carModel);
+		transaction.setUserName(userName);
+		transaction.setCarBidingPrice(bidingprice);
+		String response = bidingService.saveTransactionDetails(transaction);
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.addObject("response", response);
+		modelAndView.setViewName("successform");
+		return modelAndView;
 	}
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<marquee width="100%" behavior="scroll" bgcolor="#00ffff">  
-			 Know Your Neighborhood Application
+	Car Sale Application
 		</marquee> 
 <title>Registration success form</title>
 <body>
