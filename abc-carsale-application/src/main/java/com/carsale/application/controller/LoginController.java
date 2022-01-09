@@ -3,6 +3,8 @@ package com.carsale.application.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -22,6 +24,7 @@ import com.carsale.application.service.UserService;
 @RestController
 @RequestMapping("/user")
 public class LoginController {
+	private static final Logger logger = LogManager.getLogger(LoginController.class);
 
 	@Autowired
 	UserService userService;
@@ -43,12 +46,12 @@ public class LoginController {
 		HttpSession session = request.getSession();
 		String userName = userDto.getUserName();
 		String password = userDto.getPassword();
-		// logger.info("Before login");
+		logger.info("Before login");
 		try {
 			Authentication auth = authentication
 					.authenticate(new UsernamePasswordAuthenticationToken(userName, password));
 			SecurityContextHolder.getContext().setAuthentication(auth);
-			// logger.info("After login");
+			logger.info("After login");
 			ModelAndView model = new ModelAndView();
 			String greeting = "Welcome " + userName + "..!!";
 			model.addObject("response", "Successfully LoggedIn" + " " + userName);
@@ -57,7 +60,7 @@ public class LoginController {
 			session.setAttribute("userName", userName);
 			return model;
 		} catch (BadCredentialsException ex) {
-			// logger.info("Bad creddentials: ", ex.getMessage());
+			logger.info("Bad creddentials: ", ex.getMessage());
 			ModelAndView model = new ModelAndView();
 			UserDto user = new UserDto();
 			model.addObject("user", user);

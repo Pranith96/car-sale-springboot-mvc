@@ -180,7 +180,7 @@
 	<div class="box-main">
 		<div class="firstHalf">
 			<h1 class="heading-mission">Mission:</h1>
-			<p class="text-mission">Community Portal is an award-winning and
+			<p class="text-mission">ABC Car Sale pvt ltd Portal is an award-winning and
 				leading provider of software in the industry. Our solutions boost
 				productivity, lower costs and help users to communicate grow their
 				businesses. We respect and value our team, and we look to bring the
@@ -191,8 +191,8 @@
 				products and services and identifying new ways to add value for our
 				customers.</p>
 			<h1 class="heading-vission">Vision:</h1>
-			<p class="text-vision">Community Portal is about relationships,
-				and technology and communication should make those relationships
+			<p class="text-vision">ABC Car Sale pvt ltd Portal is about relationships,
+				technology, communication, sales and services should make those relationships
 				stronger. That's why, at this company, it's our mission to transform
 				the way the industry operates by putting people at the heart of
 				latest technology. By focusing on our customers, demanding

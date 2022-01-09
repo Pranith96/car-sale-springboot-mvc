@@ -10,16 +10,21 @@ import java.util.stream.Collectors;
 
 import javax.transaction.Transactional;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.carsale.application.entity.Car;
+import com.carsale.application.exceptions.BusinessSystemException;
 import com.carsale.application.repository.CarRepository;
 
 @Service
 @Transactional
 public class CarServiceImpl implements CarService {
+
+    private static final Logger logger = LogManager.getLogger(CarServiceImpl.class);
 
 	public static String uploadDirectory = System.getProperty("user.dir") + "/src/main/webapp/imagedata";
 
@@ -46,8 +51,9 @@ public class CarServiceImpl implements CarService {
 			e.printStackTrace();
 		}
 		car.setfile(fileName);
-
+		logger.info("In service class before save car details");
 		Car carResponse = carRepository.save(car);
+		logger.info("In service class after save car details");
 		if (carResponse == null) {
 			return "car details not saved";
 		}
@@ -56,37 +62,45 @@ public class CarServiceImpl implements CarService {
 
 	@Override
 	public List<Car> getCarDetails(String searchValue) {
+		logger.info("In service class before fetching all car details");
 		List<Car> response = carRepository.getCarDetails(searchValue).stream()
 				.filter(status -> status.getStatus().equals("ACTIVE")).collect(Collectors.toList());
+		logger.info("In service class after fetching all car details");
 		if (null == response || response.isEmpty()) {
-			throw new RuntimeException("Details not found for Search Key");
+			throw new BusinessSystemException("Details not found for Search Key");
 		}
 		return response;
 	}
 
 	@Override
 	public List<Car> getAllCars() {
+		logger.info("In service class before fetching all car details");
 		List<Car> response = carRepository.findAll().stream().filter(car -> car.getStatus().equals("ACTIVE"))
 				.collect(Collectors.toList());
+		logger.info("In service class after fetching all car details");
 		if (null == response || response.isEmpty()) {
-			throw new RuntimeException("Details not found ");
+			throw new BusinessSystemException("No Car Details Available");
 		}
 		return response;
 	}
 
 	@Override
 	public String updateCarStatus(String carNumber) {
+		logger.info("In service class before Deactivating car details");
 		String inActiveCarStatus = "INACTIVE";
 		carRepository.updateCarStatus(carNumber, inActiveCarStatus);
+		logger.info("In service class after Deactivating car details");
 		return "Deactivated Succesfully";
 	}
 
 	@Override
 	public List<Car> getCarList(String userName) {
+		logger.info("In service class before fetching all car details");
 		List<Car> response = carRepository.findAllByUserName(userName).stream().filter(car -> car.getStatus().equals("ACTIVE"))
 				.collect(Collectors.toList());
+		logger.info("In service class after fetching all car details");
 		if (null == response || response.isEmpty()) {
-			throw new RuntimeException("Details not found ");
+			throw new BusinessSystemException("No Car Details Available for given user name");
 		}
 		return response;
 	}

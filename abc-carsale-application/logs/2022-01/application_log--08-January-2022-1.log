@@ -1,0 +1,210 @@
+2022-01-08 16:10:07,881 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AbcCarSaleApplication using Java 1.8.0_271 on HYDLPT-2GMX5 with PID 27628 (C:\Users\ramannpr\support_works\car sale application\abc-carsale-application\target\classes started by ramannpr in C:\Users\ramannpr\support_works\car sale application\abc-carsale-application)
+2022-01-08 16:10:07,991 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.8, Spring v5.3.14
+2022-01-08 16:10:07,993 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-08 16:10:08,102 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-08 16:10:08,103 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-08 16:10:09,626 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-08 16:10:09,828 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 180 ms. Found 5 JPA repository interfaces.
+2022-01-08 16:10:10,580 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@578e8a3e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-08 16:10:10,599 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-08 16:10:12,110 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2022-01-08 16:10:12,133 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-08 16:10:12,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-08 16:10:12,134 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-08 16:10:12,141 WARN o.a.j.l.DirectJDKLog [restartedMain] This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-08 16:10:12,142 INFO o.a.j.l.DirectJDKLog [restartedMain] An older version [1.2.27] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-08 16:10:12,142 INFO o.a.j.l.DirectJDKLog [restartedMain] Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2022-01-08 16:10:12,142 INFO o.a.j.l.DirectJDKLog [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-08 16:10:12,143 INFO o.a.j.l.DirectJDKLog [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-08 16:10:12,162 INFO o.a.j.l.DirectJDKLog [restartedMain] OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-08 16:10:12,765 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-01-08 16:10:12,784 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-08 16:10:12,785 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4681 ms
+2022-01-08 16:10:13,226 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-08 16:10:13,396 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.33
+2022-01-08 16:10:13,771 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-08 16:10:14,044 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-01-08 16:10:15,504 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-01-08 16:10:15,548 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-08 16:10:17,581 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKj6m8fwv7oqv74fcehir1a9ffy foreign key (role_id) references roles (role_id)
+2022-01-08 16:10:17,655 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKgd3iendaoyh04b95ykqise6qh foreign key (user_id) references user (user_id)
+2022-01-08 16:10:17,703 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-08 16:10:17,725 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-08 16:10:17,854 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-08 16:10:19,795 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fc0b55f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c07c12c, org.springframework.security.web.header.HeaderWriterFilter@5333d920, org.springframework.security.web.authentication.logout.LogoutFilter@613241cb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@770a2845, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d63da6b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a55ae90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@49458c99, org.springframework.security.web.session.SessionManagementFilter@335bdf31, org.springframework.security.web.access.ExceptionTranslationFilter@16819aa7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59ed7672]
+2022-01-08 16:10:20,733 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-08 16:10:20,770 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-08 16:10:20,870 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2022-01-08 16:10:20,895 INFO o.s.b.StartupInfoLogger [restartedMain] Started AbcCarSaleApplication in 13.657 seconds (JVM running for 15.66)
+2022-01-08 16:10:53,307 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 16:10:53,307 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-08 16:10:53,311 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2022-01-08 16:10:55,877 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-1] before calling role converter
+2022-01-08 16:10:55,946 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:10:56,006 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-1] before calling role converter
+2022-01-08 16:10:56,008 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:10:56,044 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-1] before calling role converter
+2022-01-08 16:10:56,046 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:10:56,051 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-1] before calling role converter
+2022-01-08 16:10:56,052 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:11:07,030 INFO c.c.a.c.LoginController [http-nio-8081-exec-4] Before login
+2022-01-08 16:11:07,278 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-4] in  userdetails service
+2022-01-08 16:11:07,282 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-4] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:11:07,323 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-4] select role0_.user_id as user_id1_5_0_, role0_.role_id as role_id2_5_0_, role1_.role_id as role_id1_3_1_, role1_.user_role as user_rol2_3_1_ from users_roles role0_ inner join roles role1_ on role0_.role_id=role1_.role_id where role0_.user_id=?
+2022-01-08 16:11:07,603 INFO c.c.a.c.LoginController [http-nio-8081-exec-4] After login
+2022-01-08 16:11:28,341 INFO c.c.a.c.HomePageController [http-nio-8081-exec-5] In Home page controller
+2022-01-08 16:11:33,266 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-6] In car operations controller
+2022-01-08 16:11:33,309 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-6] In service class before fetching all car details
+2022-01-08 16:11:33,322 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-6] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where ? in (car0_.car_model , car0_.registration_year)
+2022-01-08 16:11:33,329 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-6] In service class after fetching all car details
+2022-01-08 16:11:33,354 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-6] Resolved [com.carsale.application.exceptions.BusinessSystemException: Details not found for Search Key]
+2022-01-08 16:11:40,580 INFO c.c.a.c.HomePageController [http-nio-8081-exec-7] In Home page controller
+2022-01-08 16:11:44,714 INFO c.c.a.c.BidingController [http-nio-8081-exec-8] In biding controller
+2022-01-08 16:11:44,729 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-8] In service class before listing all biding details for UserName
+2022-01-08 16:11:44,734 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-8] select bidingdeta0_.biding_id as biding_i1_0_, bidingdeta0_.car_biding_price as car_bidi2_0_, bidingdeta0_.car_model as car_mode3_0_, bidingdeta0_.car_number as car_numb4_0_, bidingdeta0_.date as date5_0_, bidingdeta0_.status as status6_0_, bidingdeta0_.user_name as user_nam7_0_ from biding_details bidingdeta0_ where bidingdeta0_.user_name=?
+2022-01-08 16:11:44,747 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-8] In service class after listing all biding details for UserName
+2022-01-08 16:11:49,001 INFO c.c.a.c.HomePageController [http-nio-8081-exec-9] In Home page controller
+2022-01-08 16:11:50,375 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-10] In car operations controller
+2022-01-08 16:11:50,379 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-10] In service class before fetching all car details
+2022-01-08 16:11:50,382 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-10] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-08 16:11:50,388 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-10] In service class after fetching all car details
+2022-01-08 16:11:50,888 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-1] In car operations controller
+2022-01-08 16:11:50,890 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-2] In car operations controller
+2022-01-08 16:11:50,893 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-1] In service class before fetching all car details
+2022-01-08 16:11:50,899 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-08 16:11:50,899 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-2] In service class before fetching all car details
+2022-01-08 16:11:50,900 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-3] In car operations controller
+2022-01-08 16:11:50,901 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-2] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-08 16:11:50,903 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-3] In service class before fetching all car details
+2022-01-08 16:11:50,904 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-1] In service class after fetching all car details
+2022-01-08 16:11:50,907 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-3] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-08 16:11:50,910 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-1] Resolved [com.carsale.application.exceptions.BusinessSystemException: No Car Details Available for given user name]
+2022-01-08 16:11:50,910 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-2] In service class after fetching all car details
+2022-01-08 16:11:50,913 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-2] Resolved [com.carsale.application.exceptions.BusinessSystemException: No Car Details Available for given user name]
+2022-01-08 16:11:50,914 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-3] In service class after fetching all car details
+2022-01-08 16:11:50,918 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-3] Resolved [com.carsale.application.exceptions.BusinessSystemException: No Car Details Available for given user name]
+2022-01-08 16:11:55,713 INFO c.c.a.c.HomePageController [http-nio-8081-exec-4] In Home page controller
+2022-01-08 16:12:08,226 INFO c.c.a.c.LoginController [http-nio-8081-exec-7] Before login
+2022-01-08 16:12:08,227 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-7] in  userdetails service
+2022-01-08 16:12:08,229 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-7] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:12:08,233 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-7] select role0_.user_id as user_id1_5_0_, role0_.role_id as role_id2_5_0_, role1_.role_id as role_id1_3_1_, role1_.user_role as user_rol2_3_1_ from users_roles role0_ inner join roles role1_ on role0_.role_id=role1_.role_id where role0_.user_id=?
+2022-01-08 16:12:08,458 INFO c.c.a.c.LoginController [http-nio-8081-exec-7] After login
+2022-01-08 16:12:12,701 INFO c.c.a.c.HomePageController [http-nio-8081-exec-8] In Home page controller
+2022-01-08 16:12:15,826 INFO c.c.a.c.BidingController [http-nio-8081-exec-9] In biding controller
+2022-01-08 16:12:15,831 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-9] In service class before listing all biding details
+2022-01-08 16:12:15,887 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select bidingdeta0_.biding_id as biding_i1_0_, bidingdeta0_.car_biding_price as car_bidi2_0_, bidingdeta0_.car_model as car_mode3_0_, bidingdeta0_.car_number as car_numb4_0_, bidingdeta0_.date as date5_0_, bidingdeta0_.status as status6_0_, bidingdeta0_.user_name as user_nam7_0_ from biding_details bidingdeta0_
+2022-01-08 16:12:15,895 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-9] In service class after listing all biding details
+2022-01-08 16:12:19,035 INFO c.c.a.c.HomePageController [http-nio-8081-exec-10] In Home page controller
+2022-01-08 16:12:20,329 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-2] In car operations controller
+2022-01-08 16:12:20,336 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-2] In service class before fetching all car details
+2022-01-08 16:12:20,345 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-2] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_
+2022-01-08 16:12:20,350 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-2] In service class after fetching all car details
+2022-01-08 16:12:24,698 INFO c.c.a.c.HomePageController [http-nio-8081-exec-5] In Home page controller
+2022-01-08 16:12:35,562 INFO c.c.a.c.LoginController [http-nio-8081-exec-8] Before login
+2022-01-08 16:12:35,563 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-8] in  userdetails service
+2022-01-08 16:12:35,565 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-8] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:12:35,571 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-8] select role0_.user_id as user_id1_5_0_, role0_.role_id as role_id2_5_0_, role1_.role_id as role_id1_3_1_, role1_.user_role as user_rol2_3_1_ from users_roles role0_ inner join roles role1_ on role0_.role_id=role1_.role_id where role0_.user_id=?
+2022-01-08 16:12:35,807 INFO c.c.a.c.LoginController [http-nio-8081-exec-8] After login
+2022-01-08 16:12:40,077 INFO c.c.a.c.HomePageController [http-nio-8081-exec-9] In Home page controller
+2022-01-08 16:12:44,658 INFO c.c.a.c.BidingController [http-nio-8081-exec-10] In biding controller
+2022-01-08 16:12:44,661 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-10] In service class before listing all biding details for UserName
+2022-01-08 16:12:44,664 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-10] select bidingdeta0_.biding_id as biding_i1_0_, bidingdeta0_.car_biding_price as car_bidi2_0_, bidingdeta0_.car_model as car_mode3_0_, bidingdeta0_.car_number as car_numb4_0_, bidingdeta0_.date as date5_0_, bidingdeta0_.status as status6_0_, bidingdeta0_.user_name as user_nam7_0_ from biding_details bidingdeta0_ where bidingdeta0_.user_name=?
+2022-01-08 16:12:44,672 INFO c.c.a.s.BidingServiceImpl [http-nio-8081-exec-10] In service class after listing all biding details for UserName
+2022-01-08 16:12:47,075 INFO c.c.a.c.HomePageController [http-nio-8081-exec-2] In Home page controller
+2022-01-08 16:12:48,288 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-3] In car operations controller
+2022-01-08 16:12:48,292 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-3] In service class before fetching all car details
+2022-01-08 16:12:48,295 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-3] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where car0_.user_name=?
+2022-01-08 16:12:48,298 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-3] In service class after fetching all car details
+2022-01-08 16:12:48,302 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-3] Resolved [com.carsale.application.exceptions.BusinessSystemException: No Car Details Available for given user name]
+2022-01-08 16:12:53,455 INFO c.c.a.c.HomePageController [http-nio-8081-exec-1] In Home page controller
+2022-01-08 16:13:06,141 INFO c.c.a.c.CarOperationsController [http-nio-8081-exec-4] In car operations controller
+2022-01-08 16:13:06,146 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-4] In service class before fetching all car details
+2022-01-08 16:13:06,148 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-4] select car0_.car_id as car_id1_1_, car0_.car_model as car_mode2_1_, car0_.car_number as car_numb3_1_, car0_.file as file4_1_, car0_.price as price5_1_, car0_.registration_year as registra6_1_, car0_.status as status7_1_, car0_.user_name as user_nam8_1_ from car car0_ where ? in (car0_.car_model , car0_.registration_year)
+2022-01-08 16:13:06,154 INFO c.c.a.s.CarServiceImpl [http-nio-8081-exec-4] In service class after fetching all car details
+2022-01-08 16:13:06,157 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8081-exec-4] Resolved [com.carsale.application.exceptions.BusinessSystemException: Details not found for Search Key]
+2022-01-08 16:13:08,112 INFO c.c.a.c.HomePageController [http-nio-8081-exec-5] In Home page controller
+2022-01-08 16:13:11,425 INFO c.c.a.c.HomePageController [http-nio-8081-exec-6] In Home page controller
+2022-01-08 16:13:14,933 INFO c.c.a.c.HomePageController [http-nio-8081-exec-7] In Home page controller
+2022-01-08 16:15:17,121 INFO o.s.o.j.AbstractEntityManagerFactoryBean [Thread-6] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-08 16:15:17,131 INFO c.z.h.HikariDataSource [Thread-6] HikariPool-1 - Shutdown initiated...
+2022-01-08 16:15:17,148 INFO c.z.h.HikariDataSource [Thread-6] HikariPool-1 - Shutdown completed.
+2022-01-08 16:15:17,557 INFO o.s.b.StartupInfoLogger [restartedMain] Starting AbcCarSaleApplication using Java 1.8.0_271 on HYDLPT-2GMX5 with PID 27628 (C:\Users\ramannpr\support_works\car sale application\abc-carsale-application\target\classes started by ramannpr in C:\Users\ramannpr\support_works\car sale application\abc-carsale-application)
+2022-01-08 16:15:17,559 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.5.8, Spring v5.3.14
+2022-01-08 16:15:17,560 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-08 16:15:18,045 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-08 16:15:18,110 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+2022-01-08 16:15:18,260 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3184faf0' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-08 16:15:18,264 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-01-08 16:15:18,536 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2022-01-08 16:15:18,537 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2022-01-08 16:15:18,538 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-08 16:15:18,539 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-08 16:15:18,540 WARN o.a.j.l.DirectJDKLog [restartedMain] This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2022-01-08 16:15:18,540 INFO o.a.j.l.DirectJDKLog [restartedMain] An older version [1.2.27] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.30]
+2022-01-08 16:15:18,541 INFO o.a.j.l.DirectJDKLog [restartedMain] Loaded Apache Tomcat Native library [1.2.27] using APR version [1.7.0].
+2022-01-08 16:15:18,542 INFO o.a.j.l.DirectJDKLog [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2022-01-08 16:15:18,542 INFO o.a.j.l.DirectJDKLog [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2022-01-08 16:15:18,543 INFO o.a.j.l.DirectJDKLog [restartedMain] OpenSSL successfully initialized [OpenSSL 1.1.1k  25 Mar 2021]
+2022-01-08 16:15:18,741 INFO o.a.j.l.DirectJDKLog [restartedMain] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-01-08 16:15:18,746 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-08 16:15:18,748 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1181 ms
+2022-01-08 16:15:18,874 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-08 16:15:18,889 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-01-08 16:15:18,958 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-01-08 16:15:18,959 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-01-08 16:15:19,159 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKj6m8fwv7oqv74fcehir1a9ffy foreign key (role_id) references roles (role_id)
+2022-01-08 16:15:19,235 DEBUG o.h.e.j.s.SqlStatementLogger [restartedMain] alter table users_roles add constraint FKgd3iendaoyh04b95ykqise6qh foreign key (user_id) references user (user_id)
+2022-01-08 16:15:19,327 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-08 16:15:19,329 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-08 16:15:19,390 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-08 16:15:19,815 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@606a668d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f9617c, org.springframework.security.web.header.HeaderWriterFilter@6ab3b57e, org.springframework.security.web.authentication.logout.LogoutFilter@2c357e07, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3eca308b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a69a97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e49da98, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@358529c, org.springframework.security.web.session.SessionManagementFilter@2a9a84de, org.springframework.security.web.access.ExceptionTranslationFilter@7363ba5e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1e296bf1]
+2022-01-08 16:15:20,044 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-08 16:15:20,055 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2022-01-08 16:15:20,063 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2022-01-08 16:15:20,070 INFO o.s.b.StartupInfoLogger [restartedMain] Started AbcCarSaleApplication in 2.63 seconds (JVM running for 314.835)
+2022-01-08 16:15:20,075 INFO o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-01-08 16:15:24,763 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-08 16:15:24,763 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-08 16:15:24,765 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 2 ms
+2022-01-08 16:15:24,773 INFO c.c.a.c.HomePageController [http-nio-8081-exec-1] In Home page controller
+2022-01-08 16:15:29,300 INFO c.c.a.c.HomePageController [http-nio-8081-exec-2] In Home page controller
+2022-01-08 16:15:34,638 INFO c.c.a.c.HomePageController [http-nio-8081-exec-3] In Home page controller
+2022-01-08 16:15:51,620 INFO c.c.a.c.LoginController [http-nio-8081-exec-6] Before login
+2022-01-08 16:15:51,861 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-6] in  userdetails service
+2022-01-08 16:15:51,871 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-6] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:15:54,323 INFO c.c.a.c.LoginController [http-nio-8081-exec-7] Before login
+2022-01-08 16:15:54,325 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-7] in  userdetails service
+2022-01-08 16:15:54,327 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-7] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:24,630 INFO c.c.a.c.LoginController [http-nio-8081-exec-9] Before login
+2022-01-08 16:16:24,631 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-9] in  userdetails service
+2022-01-08 16:16:24,633 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:26,240 INFO c.c.a.c.LoginController [http-nio-8081-exec-1] Before login
+2022-01-08 16:16:26,241 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-1] in  userdetails service
+2022-01-08 16:16:26,242 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-1] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:33,366 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-2] before calling role converter
+2022-01-08 16:16:33,371 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-2] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:16:33,378 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-2] before calling role converter
+2022-01-08 16:16:33,381 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-2] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:16:33,395 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-3] before calling role converter
+2022-01-08 16:16:33,397 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-3] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:16:33,403 INFO c.c.a.s.RoleConvertor [http-nio-8081-exec-3] before calling role converter
+2022-01-08 16:16:33,405 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-3] select role0_.role_id as role_id1_3_, role0_.user_role as user_rol2_3_ from roles role0_ where role0_.user_role=?
+2022-01-08 16:16:39,882 INFO c.c.a.c.LoginController [http-nio-8081-exec-5] Before login
+2022-01-08 16:16:39,883 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-5] in  userdetails service
+2022-01-08 16:16:39,884 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-5] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:41,847 INFO c.c.a.c.LoginController [http-nio-8081-exec-6] Before login
+2022-01-08 16:16:41,849 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-6] in  userdetails service
+2022-01-08 16:16:41,852 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-6] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:50,015 INFO c.c.a.c.LoginController [http-nio-8081-exec-8] Before login
+2022-01-08 16:16:50,016 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-8] in  userdetails service
+2022-01-08 16:16:50,017 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-8] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:58,757 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-9] in  userdetails service
+2022-01-08 16:16:58,826 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:16:58,834 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select role0_.user_id as user_id1_5_0_, role0_.role_id as role_id2_5_0_, role1_.role_id as role_id1_3_1_, role1_.user_role as user_rol2_3_1_ from users_roles role0_ inner join roles role1_ on role0_.role_id=role1_.role_id where role0_.user_id=?
+2022-01-08 16:16:59,073 INFO c.c.a.c.LoginController [http-nio-8081-exec-9] Before login
+2022-01-08 16:16:59,074 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-9] in  userdetails service
+2022-01-08 16:16:59,075 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-9] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:17:00,388 INFO c.c.a.c.LoginController [http-nio-8081-exec-10] Before login
+2022-01-08 16:17:00,388 INFO c.c.a.s.SecureUserDetailsServiceImpl [http-nio-8081-exec-10] in  userdetails service
+2022-01-08 16:17:00,390 DEBUG o.h.e.j.s.SqlStatementLogger [http-nio-8081-exec-10] select user0_.user_id as user_id1_4_, user0_.email_id as email_id2_4_, user0_.mobile_number as mobile_n3_4_, user0_.name as name4_4_, user0_.password as password5_4_, user0_.status as status6_4_, user0_.user_name as user_nam7_4_ from user user0_ where user0_.user_name=?
+2022-01-08 16:58:03,057 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-2 housekeeper] HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=34m13s863ms438µs500ns).

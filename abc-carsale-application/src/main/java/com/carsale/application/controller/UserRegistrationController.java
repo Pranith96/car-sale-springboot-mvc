@@ -1,5 +1,7 @@
 package com.carsale.application.controller;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,6 +16,7 @@ import com.carsale.application.service.UserService;
 @RestController
 @RequestMapping("/user")
 public class UserRegistrationController {
+    private static final Logger logger = LogManager.getLogger(UserRegistrationController.class);
 
 	@Autowired
 	UserService userService;
@@ -29,6 +32,7 @@ public class UserRegistrationController {
 
 	@PostMapping("/register/check")
 	public ModelAndView registerUser(@ModelAttribute User user) {
+		logger.info("In user register controller");
 		String response = userService.registerUserDetails(user);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("response", response);

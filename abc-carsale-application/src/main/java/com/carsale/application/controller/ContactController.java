@@ -1,5 +1,7 @@
 package com.carsale.application.controller;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -15,6 +17,8 @@ import com.carsale.application.service.UserService;
 @RequestMapping("/home")
 public class ContactController {
 
+	private static final Logger logger = LogManager.getLogger(ContactController.class);
+
 	@Autowired
 	UserService userService;
 
@@ -29,6 +33,7 @@ public class ContactController {
 
 	@PostMapping("/contact-us/check")
 	public ModelAndView contactUs(@ModelAttribute Contact contact) {
+		logger.info("In contact controller");
 		String response = userService.contactUs(contact);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("response", response);

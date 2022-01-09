@@ -27,7 +27,7 @@ public class SecureUserDetailsServiceImpl implements UserDetailsService {
 		Optional<User> storeDetails = userRepository.findByUserName(userName);
 
 		if (storeDetails == null) {
-			throw new UsernameNotFoundException("Could not find user");
+			throw new UsernameNotFoundException("Please Enter Valid Credentials");
 		}
 		return new SecureUserDetails(storeDetails.get());
 	}
