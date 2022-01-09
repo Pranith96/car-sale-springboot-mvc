@@ -25,7 +25,7 @@
 			<th>Car Model</th>
 			<th>Car Estimated Price</th>
 			<th>Registration Year</th>
-			<th>Upload Photo</th>
+			<th>Car Photo</th>
 			<th>Car Status</th>
 		</tr>
 
@@ -36,8 +36,8 @@
 				<td><c:out value="${x.getCarModel()}" /></td>
 				<td><c:out value="${x.getPrice()}" /></td>
 				<td><c:out value="${x.getRegistrationYear()}" /></td>
-				<td><img height="100px" width="200px"
-					src="<c:out value="${x.getfile()}" />" /></td>
+				<td><img src="/imagedata/<c:out value="${x.getfile()}" />"
+					height="200px" width="200px" /></td>
 				<td><a
 					href="<c:url value='http://localhost:8081/car/status/update/${x.getCarNumber()}'/>">Currently
 						status ACTIVE. Click here to Deactivate</a></td>

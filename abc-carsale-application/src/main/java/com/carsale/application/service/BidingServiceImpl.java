@@ -14,6 +14,7 @@ import com.carsale.application.entity.BidingDetails;
 import com.carsale.application.entity.Transaction;
 import com.carsale.application.exceptions.BusinessSystemException;
 import com.carsale.application.repository.BidingRepository;
+import com.carsale.application.repository.CarRepository;
 import com.carsale.application.repository.TransactionRepository;
 
 @Service
@@ -27,6 +28,9 @@ public class BidingServiceImpl implements BidingService {
 
 	@Autowired
 	TransactionRepository trasanctionRepository;
+
+	@Autowired
+	CarService carService;
 
 	@Override
 	public String saveBidingDetails(BidingDetails bidingDetails) {
@@ -75,8 +79,10 @@ public class BidingServiceImpl implements BidingService {
 	@Override
 	public String saveTransactionDetails(Transaction transaction) {
 		Transaction response = trasanctionRepository.save(transaction);
-		String deactiveResponse = updateBidingStatus(transaction.getCarNumber());
-		logger.info("removed all unseccussfull bidings:", deactiveResponse);
+		String deactiveBidingResponse = updateBidingStatus(transaction.getCarNumber());
+		String deactiveCarResponse = carService.updateCarStatus(transaction.getCarNumber());
+		logger.info("removed all cars completed bidings:", deactiveCarResponse);
+		logger.info("removed all unseccussfull bidings:", deactiveBidingResponse);
 		if (response == null) {
 			return "Transact failed to save";
 		}

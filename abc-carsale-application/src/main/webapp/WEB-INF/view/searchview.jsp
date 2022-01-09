@@ -25,7 +25,7 @@
 			<th>Car Model</th>
 			<th>Car Estimated Price</th>
 			<th>Registration Year</th>
-			<th>Upload Photo</th>
+			<th>Car Photo</th>
 			<th>Car Status</th>
 			<th>Start Biding</th>
 		</tr>
@@ -37,11 +37,12 @@
 				<td><c:out value="${x.getCarModel()}" /></td>
 				<td><c:out value="${x.getPrice()}" /></td>
 				<td><c:out value="${x.getRegistrationYear()}" /></td>
-				<td><img height="100px" width="200px"
-					src="<c:out value="${x.getfile()}" />" /></td>
+				<td><img src="/imagedata/<c:out value="${x.getfile()}" />"
+					height="200px" width="200px" /></td>
 				<td><c:out value="${x.getStatus()}" /></td>
 				<td><a
-					href="<c:url value='http://localhost:8081/car/biding/page/${x.getCarNumber()}/${x.getCarModel()}'/>">Click to start Biding</a></td>
+					href="<c:url value='http://localhost:8081/car/biding/page/${x.getCarNumber()}/${x.getCarModel()}'/>">Click
+						to start Biding</a></td>
 			</tr>
 		</c:forEach>
 	</table>
