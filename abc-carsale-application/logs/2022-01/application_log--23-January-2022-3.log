@@ -1,0 +1,2 @@
+2022-01-23 18:13:24,438 INFO c.c.a.s.UserServiceImpl [main] In service class before save user Details
+2022-01-23 18:13:24,446 INFO c.c.a.s.UserServiceImpl [main] In service class after save user Details

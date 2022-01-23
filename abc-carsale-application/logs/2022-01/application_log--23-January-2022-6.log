@@ -1,0 +1,6 @@
+2022-01-23 18:21:48,061 INFO c.c.a.s.UserServiceImpl [main] In service class before save user Details
+2022-01-23 18:21:48,070 INFO c.c.a.s.UserServiceImpl [main] In service class after save user Details
+2022-01-23 18:21:48,073 INFO c.c.a.s.UserServiceImpl [main] In service class before fetch user Details
+2022-01-23 18:21:48,074 INFO c.c.a.s.UserServiceImpl [main] In service class after fetch user Details
+2022-01-23 18:21:48,075 INFO c.c.a.s.UserServiceImpl [main] In service class before fetch contact Details
+2022-01-23 18:21:48,075 INFO c.c.a.s.UserServiceImpl [main] In service class after fetch contact Details
